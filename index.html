@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Recursos UFV · índice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <style>
+    :root{
+      --ufv-azul:#003865;
+      --ufv-azul-osc:#001a33;
+      --ufv-azul-mid:#0a2e4a;
+      --ufv-azul-suave:#e8f0fa;
+      --ufv-rosa:#f15d74;
+      --borde:#e5e7eb;
+      --bg:#ffffff;
+      --muted:#475569;
+      --radius:16px;
+      --shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Arial, sans-serif; /* tipografía principal */
+      background: var(--bg);
+      color: var(--ufv-azul-osc);
+      line-height:1.5;
+    }
+    /* Cabecera */
+    header{
+      position:sticky; top:0; z-index:10;
+      background: var(--ufv-azul);
+      color:#fff;
+      border-bottom:3px solid #092b4a;
+    }
+    .head{
+      max-width:1100px; margin:auto;
+      display:flex; align-items:center; gap:14px;
+      padding:12px 18px;
+    }
+    .head img{height:48px}
+    .head h1{
+      margin:0;
+      font-family:"Times New Roman", Rockwell, serif; /* secundaria para titulares */
+      font-weight:700; letter-spacing:.2px;
+      font-size:1.4rem;
+    }
+
+    /* Contenido */
+    .wrap{max-width:1100px; margin:0 auto; padding:22px 18px}
+    .intro{
+      background: var(--ufv-azul-suave);
+      border:1px solid #d8e3f3;
+      padding:14px 16px; border-radius:14px; color:var(--ufv-azul-mid);
+      margin-bottom:18px; font-size:.98rem;
+    }
+    h2{
+      font-family:"Times New Roman", Rockwell, serif;
+      font-size:1.25rem; margin:18px 4px 10px;
+    }
+
+    /* Tarjetas */
+    .grid{
+      display:grid; gap:16px;
+      grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+    @media (min-width:640px){ .grid{ grid-template-columns: repeat(2, 1fr);} }
+    @media (min-width:940px){ .grid{ grid-template-columns: repeat(3, 1fr);} }
+
+    .card{
+      position:relative;
+      background:#fff; border:1px solid var(--borde); border-radius:var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      display:flex; flex-direction:column;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .card:hover{ transform: translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.12); }
+    .card-header{
+      padding:14px 16px;
+      background:linear-gradient(180deg, #0d3b66 0, #0a2e4a 100%);
+      color:#fff;
+      border-bottom:1px solid rgba(255,255,255,.15);
+    }
+    .card-title{ margin:0; font-size:1.05rem }
+    .card-body{ padding:14px 16px; color:var(--muted); flex:1 }
+    .cta{
+      margin:0 16px 16px; display:inline-flex; align-items:center; gap:8px;
+      padding:10px 14px; border-radius:12px; text-decoration:none; cursor:pointer;
+      background:#0a3960; color:#fff; border:0; font-weight:600;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+    }
+    .cta:hover{ filter:brightness(1.05) }
+    .cta:focus{ outline:3px solid #90b4ff; outline-offset:2px }
+
+    /* Estado "Próximamente" */
+    .soon .card-header{ background:linear-gradient(180deg, #6b7280 0, #4b5563 100%) }
+    .badge{
+      display:inline-block; font-size:.78rem; padding:2px 8px; border-radius:999px;
+      background:#fff; color:#0a2e4a; font-weight:700; margin-left:8px;
+    }
+    .soon .badge{ color:#4b5563 }
+    .cta.disabled{
+      background:#cbd5e1; color:#334155; cursor:not-allowed;
+      box-shadow:none;
+    }
+
+    /* Footer */
+    footer{
+      margin-top:28px; padding:14px 18px; text-align:center;
+      border-top:2px solid var(--ufv-azul);
+      color:#425466; font-size:.92rem;
+    }
+
+    /* Iconos (SVG) */
+    .icon{ width:18px; height:18px; display:inline-block; vertical-align:-3px }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="head">
+      <img src="ufv_logo.png" alt="UFV" />
+      <h1>Universidad Francisco de Vitoria · recursos</h1>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="intro">
+      Acceso rápido a herramientas y chats. El contenido externo se abre en una pestaña nueva.
+    </div>
+
+    <h2>Enlaces principales</h2>
+    <section class="grid" aria-label="enlaces">
+      <!-- Chat legislación laboral -->
+      <article class="card">
+        <div class="card-header">
+          <h3 class="card-title">Chat de legislación <span class="badge">laboral</span></h3>
+        </div>
+        <div class="card-body">
+          Conversación enfocada en legislación laboral.  
+          <strong>Si aparece un error al abrir, recarga la página y se solucionará.</strong>
+        </div>
+        </div>
+        <a class="cta" href="https://notebooklm.google.com/notebook/d0480596-78b0-408f-b287-d33df37e4f90" target="_blank" rel="noopener">
+          <!-- icono externo -->
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/><path d="M5 5h5V3H3v7h2V5zm0 14v-5H3v7h7v-2H5z"/></svg>
+          Abrir chat
+        </a>
+      </article>
+
+      <!-- Chat políticas UFV (próximamente) -->
+      <article class="card">
+        <div class="card-header">
+          <h3 class="card-title">Chat de políticas UFV</h3>
+        </div>
+        <div class="card-body">
+          chatbot con las políticas de la UFV.  
+          <strong>Si aparece un error al abrir, recarga la página y se solucionará.</strong>
+        </div>
+        </div>
+        <a class="cta" href="https://notebooklm.google.com/notebook/4ad3eafd-16e3-4e08-84aa-6f0f4a2bce68" target="_blank" rel="noopener">
+          <!-- icono externo -->
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/><path d="M5 5h5V3H3v7h2V5zm0 14v-5H3v7h7v-2H5z"/></svg>
+          Abrir chat
+        </a>
+      </article>
+
+      <!-- Calculadora de salarios de convenio -->
+      <article class="card">
+        <div class="card-header">
+          <h3 class="card-title">Calculadora de salarios de convenio</h3>
+        </div>
+        <div class="card-body">
+          Acceso a la calculadora basada en categorías y tablas internas. Disponible en este sitio.
+        </div>
+        <a class="cta" href="categorias.html">
+          <!-- icono calculadora -->
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v4h10V4H7zm0 6v8h10v-8H7zm2 2h2v2H9v-2zm0 3h2v2H9v-2zm3-3h2v2h-2v-2zm0 3h2v2h-2v-2z"/></svg>
+          Abrir calculadora
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer>© 2025 Universidad Francisco de Vitoria</footer>
+</body>
+</html>

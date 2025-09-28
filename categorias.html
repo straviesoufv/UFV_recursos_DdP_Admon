@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salario de convenio por categoría</title>
+  <style>
+    /* ====== Identidad visual UFV (light theme) ====== */
+    :root{
+      /* Colores (ajustables si te pasan el manual con hex exacto) */
+      --ufv-azul:#003B65;       /* Azul corporativo */
+      --ufv-azul-osc:#002A46;   /* Azul oscuro */
+      --ufv-azul-claro:#0A99F5; /* Azul claro de apoyo */
+      --ufv-rosa:#F15D74;       /* Acento secundario opcional */
+      --bg:#ffffff;             /* Fondo claro */
+      --card:#ffffff;           /* Tarjetas blancas */
+      --border:#E5EAF2;         /* Borde suave */
+      --muted:#5A6B7F;          /* Texto secundario */
+      --text:#0F2233;           /* Texto principal */
+      --accent:var(--ufv-azul); /* Botones y focos */
+      --shadow:0 8px 26px rgba(0,0,0,.08);
+    }
+
+    /* Tipografías del sistema: Arial principal; Times y Rockwell como alternativas */
+    :root{ --font-body: Arial, "Helvetica Neue", Helvetica, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif; }
+    :root{ --font-title: Rockwell, "Times New Roman", Times, serif; }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:var(--font-body);background:var(--bg);color:var(--text)}
+
+    .ufv-header{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--border)}
+    .ufv-header img{height:36px}
+
+    .wrap{max-width:1100px;margin:16px auto;padding:0 16px}
+    h1{font-family:var(--font-title);font-weight:800;letter-spacing:.2px;color:var(--ufv-azul);font-size:clamp(24px,3.6vw,40px);margin:6px 0 12px}
+
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow)}
+    .toolbar{display:grid;grid-template-columns:1.2fr .7fr .7fr;gap:12px;padding:16px}
+    .toolbar .field{display:flex;flex-direction:column;gap:6px}
+    label{font-size:12px;color:var(--muted)}
+    input[type="text"],input[type="number"]{padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#fff;color:var(--text);outline:none}
+    input::placeholder{color:#9AA9BA}
+
+    .year-toggle{display:flex;gap:8px}
+    .pill{padding:8px 12px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--text);cursor:pointer;user-select:none}
+    .pill[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .pill:focus{outline:2px solid var(--ufv-azul-claro)}
+
+    .table-wrap{overflow:auto;border-top:1px solid var(--border)}
+    table{width:100%;border-collapse:separate;border-spacing:0}
+    thead th{position:sticky;top:0;background:#F7FAFF;font-weight:700;text-align:left;font-size:12px;color:var(--ufv-azul);border-bottom:1px solid var(--border);padding:10px}
+    tbody td{padding:10px;border-bottom:1px solid var(--border);vertical-align:top}
+    tbody tr:hover{background:#FBFDFF}
+
+    .mono{font-variant-numeric:tabular-nums;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ufv-azul-osc)}
+    .muted{color:var(--muted)}
+    .status{display:inline-block;padding:2px 8px;border-radius:999px;background:#F0F7FF;color:var(--ufv-azul);border:1px solid #D6E8FF;font-size:11px}
+
+    .footer{color:var(--muted);font-size:12px;padding:10px 16px}
+    .hint{font-size:11px;color:#7890A6}
+  </style>
+  <script>
+    const urlParams = new URLSearchParams(location.search);
+    window.DATA_SRC = urlParams.get('src') || 'data/categorias.json';
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="ufv-header" style="justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:14px">
+        <img id="ufvLogoLeft" alt="UFV" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Logo_UFV.svg" onerror="this.style.display='none'">
+        <h1>Calculadora de salario de convenio</h1>
+    </div>
+    <a href="index.html" 
+        style="padding:8px 14px; border-radius:10px; background:var(--accent); 
+                color:#fff; text-decoration:none; font-weight:600;
+                box-shadow:0 2px 6px rgba(0,0,0,.12)">
+        ← Volver
+    </a>
+    </div>
+    <div class="card">
+      <div class="toolbar">
+        <div class="field">
+          <label>Buscar categoría (ignora mayúsculas y tildes)</label>
+          <input id="q" type="text" placeholder="Escribe parte de Tipo / Categoría / Dedicación…" />
+        </div>
+        <div class="field">
+          <label>Año</label>
+          <div class="year-toggle" role="group" aria-label="Año de convenio">
+            <div class="pill" role="button" data-year="2025" aria-pressed="true">2025</div>
+            <div class="pill" role="button" data-year="2026" aria-pressed="false">2026</div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Horas semanales</label>
+          <input id="hours" type="number" step="0.25" min="0" value="37.5" />
+          <div class="hint">Exclusiva = 37,5. Plena = 30. Parcial se calcula por hora semanal.</div>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="tbl">
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Categoría</th>
+              <th>Dedicación</th>
+              <th>Tipo salario</th>
+              <th>Sueldo mensual (año)</th>
+              <th>SBA de convenio (año)</th>
+              <th>Horas semanales</th>
+              <th>SBA mínimo ajustado</th>
+              <th>Notas</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="footer">Reglas de cálculo: Exclusiva se prorratea sobre 37,5 h/sem; Plena sobre 30 h/sem; en Parcial se usa la retribución por hora semanal multiplicada por las horas indicadas. Importes en formato numérico ya preparados.</div>
+    <!-- Botón de vuelta al índice -->
+    <div style="margin-top:20px; text-align:center">
+    <a href="index.html" 
+        style="display:inline-block; padding:10px 16px; border-radius:12px;
+                background:var(--accent); color:#fff; text-decoration:none; 
+                font-weight:600; box-shadow:0 4px 10px rgba(0,0,0,.15)">
+        ← Volver al índice
+    </a>
+    </div>
+</div>
+
+  <script>
+    const byId = id => document.getElementById(id);
+    const $q = byId('q');
+    const $tbl = byId('tbl').querySelector('tbody');
+    const $hours = byId('hours');
+    const yearButtons = [...document.querySelectorAll('.year-toggle .pill')];
+
+    let viewRows = [];
+    let selectedYear = 2025;
+
+    const normalize = s => (s ?? '').toString().normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
+
+    function fmtEUR(n){
+      if (!isFinite(n)) n = 0;
+      return new Intl.NumberFormat('es-ES', { style:'currency', currency:'EUR', minimumFractionDigits:2, maximumFractionDigits:2 }).format(n);
+    }
+
+    function compute(row, year, hours){
+      const dedication = normalize(row.dedicacion);
+      const tipoSal = normalize(row.tipoSalario);
+
+      let baseSueldoMensual = year === 2025 ? row.sueldo2025 : row.sueldo2026;
+      let baseSBA = year === 2025 ? row.sba2025 : row.sba2026;
+
+      let notes = [];
+      let adjustedSBA = 0;
+
+      if (dedication.includes('exclusiva')){
+        const factor = (hours || 0) / 37.5;
+        adjustedSBA = baseSBA * factor;
+        notes.push('Prorrateo sobre 37,5 h/sem');
+      } else if (dedication.includes('plena')){
+        const factor = (hours || 0) / 30;
+        adjustedSBA = baseSBA * factor;
+        notes.push('Prorrateo sobre 30 h/sem');
+      } else {
+        if (tipoSal.includes('hora') && baseSueldoMensual){
+          const mensual = baseSueldoMensual * (hours || 0);
+          adjustedSBA = mensual * 12;
+          notes.push('Hora semanal × 12 meses');
+        } else {
+          const factor = (hours || 0) / 37.5;
+          adjustedSBA = baseSBA * factor;
+          notes.push('Asunción: prorrateo sobre 37,5 h');
+        }
+      }
+      return { adjustedSBA, notes: notes.join(' · ') };
+    }
+
+    function render(){
+      const q = normalize($q.value);
+      const hours = Number($hours.value) || 0;
+
+      const rows = viewRows.filter(r => {
+        if (!q) return true;
+        const haystack = normalize([r.tipo, r.categoria, r.dedicacion, r.tipoSalario].join(' | '));
+        return haystack.includes(q);
+      });
+
+      const frag = document.createDocumentFragment();
+      rows.forEach(r => {
+        const { adjustedSBA, notes } = compute(r, selectedYear, hours);
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${r.tipo}</td>
+          <td>${r.categoria}</td>
+          <td>${r.dedicacion}</td>
+          <td><span class="status">${r.tipoSalario}</span></td>
+          <td class="mono">${fmtEUR(selectedYear===2025?r.sueldo2025:r.sueldo2026)}</td>
+          <td class="mono">${fmtEUR(selectedYear===2025?r.sba2025:r.sba2026)}</td>
+          <td class="mono">${hours.toFixed(2)} h/sem</td>
+          <td class="mono">${fmtEUR(adjustedSBA)}</td>
+          <td class="muted">${notes}</td>
+        `;
+        frag.appendChild(tr);
+      });
+
+      $tbl.innerHTML = '';
+      $tbl.appendChild(frag);
+    }
+
+    async function loadRemote(src){
+      try{
+        const res = await fetch(src, { cache:'no-store' });
+        if(!res.ok) throw new Error('No se pudo descargar');
+        const data = await res.json();
+        viewRows = (data||[]).map(r=>({
+          tipo: r["Tipo"] ?? '',
+          categoria: r["Categoría"] ?? '',
+          dedicacion: r["Dedicación"] ?? '',
+          tipoSalario: r["Tipo salario"] ?? '',
+          sueldo2025: r["Sueldo mensual de Convenio (2025)"] ?? 0,
+          sueldo2026: r["Sueldo menusal de Convenio (2026)"] ?? r["Sueldo mensual de Convenio (2026)"] ?? 0,
+          sba2025: r["SBA 2025"] ?? 0,
+          sba2026: r["SBA 2026"] ?? 0,
+        }));
+        render();
+        return true;
+      } catch(e){
+        console.warn('Fallo cargando remoto', e);
+        return false;
+      }
+    }
+
+    $q.addEventListener('input', () => render());
+    $hours.addEventListener('input', () => render());
+    yearButtons.forEach(btn => btn.addEventListener('click', () => {
+      yearButtons.forEach(b => b.setAttribute('aria-pressed','false'));
+      btn.setAttribute('aria-pressed','true');
+      selectedYear = Number(btn.dataset.year);
+      render();
+    }));
+
+    (async ()=>{
+      await loadRemote(window.DATA_SRC);
+    })();
+  </script>
+</body>
+</html>

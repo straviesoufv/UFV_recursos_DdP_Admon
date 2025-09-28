@@ -1,0 +1,902 @@
+[
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Ordinario o Catedrático",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":2917.01,
+    "Sueldo menusal de Convenio (2026)":2975.35,
+    "SBA 2025":43755.15,
+    "SBA 2026":44630.25
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Ordinario o Catedrático",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":2537.07,
+    "Sueldo menusal de Convenio (2026)":2587.81,
+    "SBA 2025":38056.05,
+    "SBA 2026":38817.15
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Ordinario o Catedrático",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":115.34,
+    "Sueldo menusal de Convenio (2026)":117.65,
+    "SBA 2025":64878.75,
+    "SBA 2026":66178.125
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Agregado o Titular",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":2348.36,
+    "Sueldo menusal de Convenio (2026)":2395.33,
+    "SBA 2025":35225.4,
+    "SBA 2026":35929.95
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Agregado o Titular",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":2016.15,
+    "Sueldo menusal de Convenio (2026)":2056.47,
+    "SBA 2025":30242.25,
+    "SBA 2026":30847.05
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Agregado o Titular",
+    "Dedicación":"Semiplena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1175.13,
+    "Sueldo menusal de Convenio (2026)":1198.63,
+    "SBA 2025":17626.95,
+    "SBA 2026":17979.45
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Agregado o Titular",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":96.26,
+    "Sueldo menusal de Convenio (2026)":98.19,
+    "SBA 2025":54146.25,
+    "SBA 2026":55231.875
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Adjunto o Encargado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1950.31,
+    "Sueldo menusal de Convenio (2026)":1989.32,
+    "SBA 2025":29254.65,
+    "SBA 2026":29839.8
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Adjunto o Encargado",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1705.34,
+    "Sueldo menusal de Convenio (2026)":1739.45,
+    "SBA 2025":25580.1,
+    "SBA 2026":26091.75
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Adjunto",
+    "Dedicación":"Semiplena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":975.28,
+    "Sueldo menusal de Convenio (2026)":994.79,
+    "SBA 2025":14629.2,
+    "SBA 2026":14921.85
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Contratado Doctor o Permanente Universitario",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1950.31,
+    "Sueldo menusal de Convenio (2026)":1989.32,
+    "SBA 2025":29254.65,
+    "SBA 2026":29839.8
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Contratado Doctor o Permanente Universitario",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1705.34,
+    "Sueldo menusal de Convenio (2026)":1739.45,
+    "SBA 2025":25580.1,
+    "SBA 2026":26091.75
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Colaborador Licenciado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1884.52,
+    "Sueldo menusal de Convenio (2026)":1922.21,
+    "SBA 2025":28267.8,
+    "SBA 2026":28833.15
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Colaborador Licenciado",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1635.7,
+    "Sueldo menusal de Convenio (2026)":1668.41,
+    "SBA 2025":24535.5,
+    "SBA 2026":25026.15
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Colaborador Licenciado",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":78.48,
+    "Sueldo menusal de Convenio (2026)":80.05,
+    "SBA 2025":44145.0,
+    "SBA 2026":45028.125
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Ayudante Doctor",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1818.71,
+    "Sueldo menusal de Convenio (2026)":1855.08,
+    "SBA 2025":27280.65,
+    "SBA 2026":27826.2
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Ayudante Doctor",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1566.58,
+    "Sueldo menusal de Convenio (2026)":1597.91,
+    "SBA 2025":23498.7,
+    "SBA 2026":23968.65
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Ayudante Doctor",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":75.21,
+    "Sueldo menusal de Convenio (2026)":76.71,
+    "SBA 2025":42305.625,
+    "SBA 2026":43149.375
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Auxiliar\/Ayudante",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1752.91,
+    "Sueldo menusal de Convenio (2026)":1787.97,
+    "SBA 2025":26293.65,
+    "SBA 2026":26819.55
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Auxiliar\/Ayudante",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1496.55,
+    "Sueldo menusal de Convenio (2026)":1526.48,
+    "SBA 2025":22448.25,
+    "SBA 2026":22897.2
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Auxiliar\/Ayudante",
+    "Dedicación":"Semiplena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":876.56,
+    "Sueldo menusal de Convenio (2026)":894.09,
+    "SBA 2025":13148.4,
+    "SBA 2026":13411.35
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Auxiliar\/Ayudante",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":72.01,
+    "Sueldo menusal de Convenio (2026)":73.45,
+    "SBA 2025":40505.625,
+    "SBA 2026":41315.625
+  },
+  {
+    "Tipo":"Personal Docente-Investigador (Subgrupo 1º)",
+    "Categoría":"Asociado \/ Colaborador Asociado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":72.01,
+    "Sueldo menusal de Convenio (2026)":73.45,
+    "SBA 2025":40505.625,
+    "SBA 2026":41315.625
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Titular de Escuela Universitaria",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":2348.36,
+    "Sueldo menusal de Convenio (2026)":2395.33,
+    "SBA 2025":35225.4,
+    "SBA 2026":35929.95
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Titular de Escuela Universitaria",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":2016.15,
+    "Sueldo menusal de Convenio (2026)":2056.47,
+    "SBA 2025":30242.25,
+    "SBA 2026":30847.05
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Titular de Escuela Universitaria",
+    "Dedicación":"Semiplena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1284.34,
+    "Sueldo menusal de Convenio (2026)":1310.03,
+    "SBA 2025":19265.1,
+    "SBA 2026":19650.45
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Titular de Escuela Universitaria",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":96.26,
+    "Sueldo menusal de Convenio (2026)":98.19,
+    "SBA 2025":54146.25,
+    "SBA 2026":55231.875
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Agregado de Escuela Universitaria",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":2111.2,
+    "Sueldo menusal de Convenio (2026)":2153.42,
+    "SBA 2025":31668.0,
+    "SBA 2026":32301.3
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Agregado de Escuela Universitaria",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1814.45,
+    "Sueldo menusal de Convenio (2026)":1850.74,
+    "SBA 2025":27216.75,
+    "SBA 2026":27761.1
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Agregado de Escuela Universitaria",
+    "Dedicación":"Semiplena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1055.73,
+    "Sueldo menusal de Convenio (2026)":1076.84,
+    "SBA 2025":15835.95,
+    "SBA 2026":16152.6
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Agregado de Escuela Universitaria",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":86.51,
+    "Sueldo menusal de Convenio (2026)":88.24,
+    "SBA 2025":48661.875,
+    "SBA 2026":49635.0
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Adjunto de Escuela Universitaria",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1894.16,
+    "Sueldo menusal de Convenio (2026)":1932.04,
+    "SBA 2025":28412.4,
+    "SBA 2026":28980.6
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Adjunto de Escuela Universitaria",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1627.89,
+    "Sueldo menusal de Convenio (2026)":1660.45,
+    "SBA 2025":24418.35,
+    "SBA 2026":24906.75
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Adjunto de Escuela Universitaria",
+    "Dedicación":"Semiplena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":947.24,
+    "Sueldo menusal de Convenio (2026)":966.18,
+    "SBA 2025":14208.6,
+    "SBA 2026":14492.7
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Adjunto de Escuela Universitaria",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":77.25,
+    "Sueldo menusal de Convenio (2026)":78.8,
+    "SBA 2025":43453.125,
+    "SBA 2026":44325.0
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Colaborador Licenciado de Escuela Universitaria",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1837.35,
+    "Sueldo menusal de Convenio (2026)":1874.1,
+    "SBA 2025":27560.25,
+    "SBA 2026":28111.5
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Colaborador Licenciado de Escuela Universitaria",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1579.01,
+    "Sueldo menusal de Convenio (2026)":1610.59,
+    "SBA 2025":23685.15,
+    "SBA 2026":24158.85
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Colaborador Licenciado de Escuela Universitaria",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":74.94,
+    "Sueldo menusal de Convenio (2026)":76.44,
+    "SBA 2025":42153.75,
+    "SBA 2026":42997.5
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Colaborador Diplomado de Escuela Universitaria",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1782.24,
+    "Sueldo menusal de Convenio (2026)":1817.88,
+    "SBA 2025":26733.6,
+    "SBA 2026":27268.2
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Colaborador Diplomado de Escuela Universitaria",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1531.67,
+    "Sueldo menusal de Convenio (2026)":1562.3,
+    "SBA 2025":22975.05,
+    "SBA 2026":23434.5
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Colaborador Diplomado de Escuela Universitaria",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":72.68,
+    "Sueldo menusal de Convenio (2026)":74.13,
+    "SBA 2025":40882.5,
+    "SBA 2026":41698.125
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Auxiliar o Ayudante de Escuela Universitaria",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1728.76,
+    "Sueldo menusal de Convenio (2026)":1763.34,
+    "SBA 2025":25931.4,
+    "SBA 2026":26450.1
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Auxiliar o Ayudante de Escuela Universitaria",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1485.73,
+    "Sueldo menusal de Convenio (2026)":1515.44,
+    "SBA 2025":22285.95,
+    "SBA 2026":22731.6
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Auxiliar o Ayudante de Escuela Universitaria",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":70.49,
+    "Sueldo menusal de Convenio (2026)":71.9,
+    "SBA 2025":39650.625,
+    "SBA 2026":40443.75
+  },
+  {
+    "Tipo":"Profesores de las antiguas Escuelas Universitarias (A extinguir)",
+    "Categoría":"Asociado de Escuela Universitaria",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":75.32,
+    "Sueldo menusal de Convenio (2026)":76.83,
+    "SBA 2025":42367.5,
+    "SBA 2026":43216.875
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Titular",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":2331.09,
+    "Sueldo menusal de Convenio (2026)":2377.71,
+    "SBA 2025":34966.35,
+    "SBA 2026":35665.65
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Titular",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1525.99,
+    "Sueldo menusal de Convenio (2026)":1556.51,
+    "SBA 2025":22889.85,
+    "SBA 2026":23347.65
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Titular",
+    "Dedicación":"Semiplena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1017.48,
+    "Sueldo menusal de Convenio (2026)":1037.83,
+    "SBA 2025":15262.2,
+    "SBA 2026":15567.45
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Titular",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":39.72,
+    "Sueldo menusal de Convenio (2026)":40.51,
+    "SBA 2025":22342.5,
+    "SBA 2026":22786.875
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Contratado Doctor",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1635.96,
+    "Sueldo menusal de Convenio (2026)":1668.68,
+    "SBA 2025":24539.4,
+    "SBA 2026":25030.2
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Contratado Doctor",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1226.95,
+    "Sueldo menusal de Convenio (2026)":1251.49,
+    "SBA 2025":18404.25,
+    "SBA 2026":18772.35
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Contratado Doctor",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":31.96,
+    "Sueldo menusal de Convenio (2026)":32.6,
+    "SBA 2025":17977.5,
+    "SBA 2026":18337.5
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Colaborador Licenciado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1326.48,
+    "Sueldo menusal de Convenio (2026)":1353.01,
+    "SBA 2025":19897.2,
+    "SBA 2026":20295.15
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Colaborador Licenciado",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":972.97,
+    "Sueldo menusal de Convenio (2026)":992.43,
+    "SBA 2025":14594.55,
+    "SBA 2026":14886.45
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Colaborador Licenciado",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":25.79,
+    "Sueldo menusal de Convenio (2026)":26.31,
+    "SBA 2025":14506.875,
+    "SBA 2026":14799.375
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Colaborador Diplomado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1260.13,
+    "Sueldo menusal de Convenio (2026)":1285.33,
+    "SBA 2025":18901.95,
+    "SBA 2026":19279.95
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Colaborador Diplomado",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":924.32,
+    "Sueldo menusal de Convenio (2026)":942.81,
+    "SBA 2025":13864.8,
+    "SBA 2026":14142.15
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Auxiliar\/Ayudante",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1168.4,
+    "Sueldo menusal de Convenio (2026)":1191.77,
+    "SBA 2025":17526.0,
+    "SBA 2026":17876.55
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Auxiliar\/Ayudante",
+    "Dedicación":"Plena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":878.01,
+    "Sueldo menusal de Convenio (2026)":895.57,
+    "SBA 2025":13170.15,
+    "SBA 2026":13433.55
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Auxiliar\/Ayudante",
+    "Dedicación":"Semiplena",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":587.56,
+    "Sueldo menusal de Convenio (2026)":599.31,
+    "SBA 2025":8813.4,
+    "SBA 2026":8989.65
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Auxiliar\/Ayudante",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":22.97,
+    "Sueldo menusal de Convenio (2026)":23.43,
+    "SBA 2025":12920.625,
+    "SBA 2026":13179.375
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Asociado",
+    "Dedicación":"Parcial",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":24.01,
+    "Sueldo menusal de Convenio (2026)":24.49,
+    "SBA 2025":13505.625,
+    "SBA 2026":13775.625
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Profesor Emérito",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":96.26,
+    "Sueldo menusal de Convenio (2026)":98.19,
+    "SBA 2025":54146.25,
+    "SBA 2026":55231.875
+  },
+  {
+    "Tipo":"Personal de Enseñanzas No Oficiales (Subgrupo 3º)",
+    "Categoría":"Profesor Visitante e Invitado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Retribución x Hora Semanal",
+    "Sueldo mensual de Convenio (2025)":81.71,
+    "Sueldo menusal de Convenio (2026)":83.34,
+    "SBA 2025":45961.875,
+    "SBA 2026":46878.75
+  },
+  {
+    "Tipo":"Subgrupo I: Personal titulado",
+    "Categoría":"Titulado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1903.38,
+    "Sueldo menusal de Convenio (2026)":1941.45,
+    "SBA 2025":28550.7,
+    "SBA 2026":29121.75
+  },
+  {
+    "Tipo":"Subgrupo I: Personal titulado",
+    "Categoría":"Titulado de grado medio",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1704.44,
+    "Sueldo menusal de Convenio (2026)":1738.53,
+    "SBA 2025":25566.6,
+    "SBA 2026":26077.95
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"Jefe Superior",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1903.38,
+    "Sueldo menusal de Convenio (2026)":1941.45,
+    "SBA 2025":28550.7,
+    "SBA 2026":29121.75
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"Tecnico\/a Administrativo\/a",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1370.13,
+    "Sueldo menusal de Convenio (2026)":1397.53,
+    "SBA 2025":20551.95,
+    "SBA 2026":20962.95
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"Jefe de Sección",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1320.32,
+    "Sueldo menusal de Convenio (2026)":1346.73,
+    "SBA 2025":19804.8,
+    "SBA 2026":20200.95
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"Jefe de Negociado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1320.32,
+    "Sueldo menusal de Convenio (2026)":1346.73,
+    "SBA 2025":19804.8,
+    "SBA 2026":20200.95
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"Subjefe de Negociado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1320.32,
+    "Sueldo menusal de Convenio (2026)":1346.73,
+    "SBA 2025":19804.8,
+    "SBA 2026":20200.95
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"Oficial de primera",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1320.32,
+    "Sueldo menusal de Convenio (2026)":1346.73,
+    "SBA 2025":19804.8,
+    "SBA 2026":20200.95
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"Oficial de segunda",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1221.32,
+    "Sueldo menusal de Convenio (2026)":1245.75,
+    "SBA 2025":18319.8,
+    "SBA 2026":18686.25
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"Auxiliar",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1196.96,
+    "Sueldo menusal de Convenio (2026)":1220.9,
+    "SBA 2025":17954.4,
+    "SBA 2026":18313.5
+  },
+  {
+    "Tipo":"Subgrupo II.a: Administración",
+    "Categoría":"En formación",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":785.64,
+    "Sueldo menusal de Convenio (2026)":801.35,
+    "SBA 2025":11784.6,
+    "SBA 2026":12020.25
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Analista",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1903.38,
+    "Sueldo menusal de Convenio (2026)":1941.45,
+    "SBA 2025":28550.7,
+    "SBA 2026":29121.75
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Técnico de TIC",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1478.58,
+    "Sueldo menusal de Convenio (2026)":1508.15,
+    "SBA 2025":22178.7,
+    "SBA 2026":22622.25
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Operador",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1320.32,
+    "Sueldo menusal de Convenio (2026)":1346.73,
+    "SBA 2025":19804.8,
+    "SBA 2026":20200.95
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Bibliotecario\/Facultativo",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1903.38,
+    "Sueldo menusal de Convenio (2026)":1941.45,
+    "SBA 2025":28550.7,
+    "SBA 2026":29121.75
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Ayudante de Biblioteca, titulado",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1478.59,
+    "Sueldo menusal de Convenio (2026)":1508.16,
+    "SBA 2025":22178.85,
+    "SBA 2026":22622.4
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Auxiliar de Biblioteca",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1196.96,
+    "Sueldo menusal de Convenio (2026)":1220.9,
+    "SBA 2025":17954.4,
+    "SBA 2026":18313.5
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Encargado de servicios generales",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1478.59,
+    "Sueldo menusal de Convenio (2026)":1508.16,
+    "SBA 2025":22178.85,
+    "SBA 2026":22622.4
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Técnico especialista de oficios",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1370.13,
+    "Sueldo menusal de Convenio (2026)":1397.53,
+    "SBA 2025":20551.95,
+    "SBA 2026":20962.95
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Conductor de primera",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1320.32,
+    "Sueldo menusal de Convenio (2026)":1346.73,
+    "SBA 2025":19804.8,
+    "SBA 2026":20200.95
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Conductor de segunda",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1221.32,
+    "Sueldo menusal de Convenio (2026)":1245.75,
+    "SBA 2025":18319.8,
+    "SBA 2026":18686.25
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Oficial 1.ª oficios auxiliares \/ Laboratorios",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1320.32,
+    "Sueldo menusal de Convenio (2026)":1346.73,
+    "SBA 2025":19804.8,
+    "SBA 2026":20200.95
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Oficial 2.ª oficios auxiliares \/ Laboratorios",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1221.32,
+    "Sueldo menusal de Convenio (2026)":1245.75,
+    "SBA 2025":18319.8,
+    "SBA 2026":18686.25
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Auxiliar 1.ª de Servicios",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1196.96,
+    "Sueldo menusal de Convenio (2026)":1220.9,
+    "SBA 2025":17954.4,
+    "SBA 2026":18313.5
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Auxiliar 2.ª de Servicios",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1147.92,
+    "Sueldo menusal de Convenio (2026)":1170.88,
+    "SBA 2025":17218.8,
+    "SBA 2026":17563.2
+  },
+  {
+    "Tipo":"Subgrupo II.b: T.I.C.",
+    "Categoría":"Personal de limpieza",
+    "Dedicación":"Exclusiva",
+    "Tipo salario":"Sueldo Mensual",
+    "Sueldo mensual de Convenio (2025)":1147.92,
+    "Sueldo menusal de Convenio (2026)":1170.88,
+    "SBA 2025":17218.8,
+    "SBA 2026":17563.2
+  }
+]
