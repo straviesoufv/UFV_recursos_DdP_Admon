@@ -95,7 +95,9 @@
         <div class="field">
           <label>Horas semanales</label>
           <input id="hours" type="number" step="0.25" min="0" value="37.5" />
-          <div class="hint">Exclusiva = 37,5. Plena = 30. Parcial se calcula por hora semanal.</div>
+          <div class="hint">
+            Exclusiva = 37,5. Plena = 30 (tope de cálculo en 30 h/sem). Parcial se calcula por hora semanal.
+          </div>
         </div>
       </div>
       <div class="table-wrap">
@@ -109,7 +111,7 @@
               <th>Sueldo mensual (año)</th>
               <th>SBA de convenio (año)</th>
               <th>Horas semanales</th>
-              <th>SBA mínimo ajustado</th>
+              <th>SBA proporcional a la jornada</th>
               <th>Notas</th>
             </tr>
           </thead>
@@ -145,37 +147,41 @@
       return new Intl.NumberFormat('es-ES', { style:'currency', currency:'EUR', minimumFractionDigits:2, maximumFractionDigits:2 }).format(n);
     }
 
-    function compute(row, year, hours){
-      const dedication = normalize(row.dedicacion);
-      const tipoSal = normalize(row.tipoSalario);
+  function compute(row, year, hours){
+    const dedication = normalize(row.dedicacion);
+    const tipoSal = normalize(row.tipoSalario);
 
-      let baseSueldoMensual = year === 2025 ? row.sueldo2025 : row.sueldo2026;
-      let baseSBA = year === 2025 ? row.sba2025 : row.sba2026;
+    const baseSueldoMensual = year === 2025 ? row.sueldo2025 : row.sueldo2026;
+    const baseSBA = year === 2025 ? row.sba2025 : row.sba2026;
 
-      let notes = [];
-      let adjustedSBA = 0;
+    let notes = [];
+    let adjustedSBA = 0;
 
-      if (dedication.includes('exclusiva')){
-        const factor = (hours || 0) / 37.5;
-        adjustedSBA = baseSBA * factor;
-        notes.push('Prorrateo sobre 37,5 h/sem');
-      } else if (dedication.includes('plena')){
-        const factor = (hours || 0) / 30;
-        adjustedSBA = baseSBA * factor;
-        notes.push('Prorrateo sobre 30 h/sem');
+    if (dedication.includes('exclusiva')){
+      const factor = (hours || 0) / 37.5;
+      adjustedSBA = baseSBA * factor;
+      notes.push('Prorrateo sobre 37,5 h/sem');
+    } else if (dedication.includes('plena')){
+      // Tope a 30 h/sem
+      const capped = Math.min(Number(hours) || 0, 30);
+      const factor = capped / 30;
+      adjustedSBA = baseSBA * factor;
+      notes.push(capped < (Number(hours) || 0) ? 'Tope aplicado: 30 h/sem' : 'Prorrateo sobre 30 h/sem');
+    } else {
+      // Parcial u otras casuísticas
+      if (tipoSal.includes('hora') && baseSueldoMensual){
+        const mensual = baseSueldoMensual * (Number(hours) || 0);
+        adjustedSBA = mensual * 12;
+        notes.push('Hora semanal × 12 meses');
       } else {
-        if (tipoSal.includes('hora') && baseSueldoMensual){
-          const mensual = baseSueldoMensual * (hours || 0);
-          adjustedSBA = mensual * 12;
-          notes.push('Hora semanal × 12 meses');
-        } else {
-          const factor = (hours || 0) / 37.5;
-          adjustedSBA = baseSBA * factor;
-          notes.push('Asunción: prorrateo sobre 37,5 h');
-        }
+        const factor = (Number(hours) || 0) / 37.5;
+        adjustedSBA = baseSBA * factor;
+        notes.push('Asunción: prorrateo sobre 37,5 h');
       }
-      return { adjustedSBA, notes: notes.join(' · ') };
     }
+    return { adjustedSBA, notes: notes.join(' · ') };
+  }
+
 
     function render(){
       const q = normalize($q.value);
